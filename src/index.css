@@ -1,0 +1,133 @@
+@import "~bulma/css/bulma.css";
+
+html{
+  min-height: 100%;
+  background-color: #FAFAFA;
+}
+
+.input,
+.textarea{
+  border: 0;
+  box-shadow: unset;
+}
+
+.main-header .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding:1rem;
+}
+
+.main-header h1{
+  font-size: 2.75rem;
+  line-height: 3.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filters{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 315px;
+  margin-left: auto;
+}
+
+.notice-area .notification{
+  width: 98%;
+  margin: 0 auto;
+}
+
+.ideas-board{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: self-start;
+}
+
+.ideas-board .card{
+  width: 100%;
+  margin: 1rem;
+}
+
+@media only screen and (min-width: 600px){
+  .ideas-board .card{
+    flex: 1 1;
+    max-width: 304px;
+    min-width: 250px;
+  }
+}
+
+.ideas-board .card-content{
+  padding: 0;
+}
+
+.ideas-board footer{
+  padding: .5rem;
+}
+
+.ideas-board .content{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.ideas-board textarea{
+  min-height: 195px;
+}
+.ideas-board input[type='text'],
+.ideas-board textarea {
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+}
+
+.ideas-board .card:not(:first-child) input[type="text"],
+.ideas-board .card:not(:first-child) textarea{
+  border: 1px dotted #209cee;
+}
+
+.ideas-board .card-content p {
+  padding-top: .75rem;
+  padding-right: .75rem;
+  padding-bottom: .75rem;
+  padding-left: .75rem;
+  word-break: break-all;
+}
+.ideas-board .timestamps{
+  list-style: none;
+  margin-top: auto;
+  margin-left: 0;
+  padding-right: .75rem;
+  padding-bottom: .75rem;
+  padding-left: .75rem;
+  font-size: .75rem;
+}
+
+.ideas-board:not(:first-child) .card-content{
+  min-height: 202px;
+}
+.ideas-board .card:not(:first-child) .card-footer{
+  justify-content: flex-end;
+}
+
+.ideas-board .card-header:hover,
+.ideas-board .card-content:hover{
+  cursor: pointer;
+}
+.ideas-board .card-header:hover .card-header-title,
+.ideas-board .card-content:hover .content p{
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 1000 1000'%3E%3Cg fill='%23209cee'%3E%3Cpath d='M420,693c17.5,1.2,35.3-4,49.6-15.8l4.8-1.5L322.7,523.9l-1.5,4.8c-11.8,14.3-17.1,32.1-15.9,49.6l-53.8,168.5L420,693z M969.4,78.6l-49.6-49.6c-27.4-27.4-71.9-27.4-99.3,0L772.4,77l148.9,148.9l48.1-48.1C996.9,150.4,996.9,106,969.4,78.6z M870.2,277.1L721.2,128.2L375.3,474.1L524.2,623L870.2,277.1z M852.4,921.4H78V147.1h493.6V79H80.2C41.4,79,10,110.5,10,149.2v772.2c0,38.8,31.4,70.2,70.2,70.2h772.2c38.8,0,70.2-31.4,70.2-70.2V430h-70.2V921.4z'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 16px;
+}
+.ideas-board .card-header:hover .card-header-title{
+  background-position: 95% 16px;
+}
+.ideas-board .card-content:hover .content p{
+  background-position: 95% bottom;
+}
+
+
+.add-new-idea button{
+  width: 100%;
+}
