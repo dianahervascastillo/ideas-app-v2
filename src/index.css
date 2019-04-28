@@ -8,7 +8,7 @@ html{
 .input,
 .textarea{
   border: 0;
-  box-shadow: unset;
+  box-shadow: none;
 }
 
 .main-header .container{
@@ -48,6 +48,8 @@ html{
 .ideas-board .card{
   width: 100%;
   margin: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 600px){
@@ -60,6 +62,7 @@ html{
 
 .ideas-board .card-content{
   padding: 0;
+  height: 100%;
 }
 
 .ideas-board footer{
